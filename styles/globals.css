@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .navbtn{
+    @apply hidden h-7 w-7 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-in-out;
+  };
+  .btn{
+    @apply h-7 w-7 cursor-pointer hover:scale-125 transition-all duration-150 ease-in-out
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -12,6 +25,8 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
